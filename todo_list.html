@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blue; /* Set background color to blue */
+            color: white; /* Set text color to white for better contrast */
+            margin: 20px;
+        }
+        .todo-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px; /* Add border-radius for rounded corners */
+            color: black; /* Set text color back to black inside the container */
+        }
+        .todo-container input {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            border: 1px solid #ccc;
+        }
+        .todo-container button {
+            padding: 10px;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            border: none;
+            background-color: #007bff; /* Blue background for buttons */
+            color: white; /* White text color for buttons */
+            cursor: pointer;
+        }
+        .todo-container button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        .todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-list li {
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+        .todo-list li button {
+            padding: 5px;
+            border-radius: 5px; /* Add border-radius for rounded corners */
+            border: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+        }
+        .todo-list li button:hover {
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h2>To-Do List</h2>
+        <input type="text" id="todo-input" placeholder="Add a new task">
+        <button>Add</button>
+        <ul id="todo-list" class="todo-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
